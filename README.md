@@ -19,3 +19,9 @@ content```
 
 
 need an index.md to see the theme
+
+
+_config
+
+title: Example Jekyll Website
+copyright: jekyll.theme @ elprofesor.io
