@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Example Jekyll Website</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <title>{{site.title}}</title>
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
+<div class="navigation">
+    {% include navigation.html %}
+</div>
 
+<h1>{{ page.title }}</h1>
 
 {{ content }}
 
 
 <div class="footer">
-    <p>© jekyll.theme @ elprofesor.io</p>
+    {% include footer.html %}
 </div>
-
 </body>
 </html>
