@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<ul>
+    {% for post in site.posts %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+    </ul>
+
+asd
+
+<ul>
+    <ul>
+        {% for category in site.categories %}
+            <li><a href="/{{ category | first | slugify }}">{{ category | first }}</a></li>
+        {% endfor %}
+        </ul>
+          
+</ul>
