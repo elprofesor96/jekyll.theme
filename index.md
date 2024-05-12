@@ -1,5 +1,6 @@
 ---
-layout: index
-title: EXAMPLE JEKYLL WEBSITE
+layout: page
+title: KEK
 ---
 
+## ASDLASDLASDLASDL
