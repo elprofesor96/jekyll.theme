@@ -7,7 +7,8 @@ body {
     /* begin border-box size */
     margin: 0 auto;
     /* 240px left and right sides to create box effect */
-    padding: 0 240px;
+    padding: 0 20px;
+    max-width: 1200px;
     margin-top: 120px;
     margin-bottom: 120px;
 }
@@ -60,3 +61,50 @@ body img {
     margin: 0 auto; /* Center the image */
 }
 
+
+
+/* Media queries for responsiveness */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+    body {
+        padding: 0 10px;
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+
+    .navigation {
+        padding: 5px 0;
+    }
+
+    .navigation ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .footer {
+        padding: 5px 0;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    body {
+        padding: 0 5px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .navigation {
+        padding: 10px 0;
+    }
+
+    .navigation ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .footer {
+        padding: 5px 0;
+    }
+}
