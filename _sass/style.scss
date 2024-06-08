@@ -51,3 +51,11 @@ a {
 a:hover {
     text-decoration: none; /* Remove underline on hover for all links */
 }
+
+body img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
