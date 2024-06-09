@@ -37,11 +37,19 @@ body {
     text-align: center;
     padding: 2px 0; /* Adjust padding as needed */
     z-index: 1000;
+    display: flex;
+    justify-content: center;
 }
+
+
 
 .navigation ul li {
     display: inline;
     margin-right: 20px;
+}
+
+.navigation ul li:last-child {
+    margin-right: 0;
 }
 
 a {
@@ -77,9 +85,13 @@ body img {
         padding: 5px 0;
     }
 
+    .navigation ul {
+        flex-direction: column;
+    }
+
     .navigation ul li {
-        display: block;
-        margin: 10px 0;
+        display: inline;
+        margin-right: 10px;
     }
 
     .footer {
@@ -91,17 +103,21 @@ body img {
 @media (max-width: 480px) {
     body {
         padding: 0 5px;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 130px;
+        margin-bottom: 130px;
     }
 
     .navigation {
         padding: 10px 0;
     }
 
+    .navigation ul {
+        flex-direction: column;
+    }
+
     .navigation ul li {
-        display: block;
-        margin: 5px 0;
+        display: inline;
+        margin-right: 10px;
     }
 
     .footer {
